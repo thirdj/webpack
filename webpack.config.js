@@ -1,3 +1,6 @@
+var webpack = require('webpack');
+var UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+
 module.exports = {
   context: __dirname + '/app',
   entry: {
@@ -8,10 +11,16 @@ module.exports = {
     path: __dirname + '/dist',
     filename: 'bundle.js'
   },
+  // debug: true,
+  // devtool: 'source-map',
   // devServer: {
   //   inline: true,
   //   port: 3333
   // },
+  // plugins: [
+  //   new webpack.SourceMapDevToolPlugin({filename: __dirname + '/dist/[name].map'}),
+  //   new webpack.optimize.UglifyJsPlugin()
+  // ],
   module: {
     loaders: [
       {
