@@ -1,13 +1,13 @@
 
-import React from "react";
-import "../css/style.css";
+import React from 'react';
+import '../css/style.css';
 
 class Greeting extends React.Component {
   constructor(props) {
     super(props);
   }
 
-  render () {
+  render() {
     return (
       <div className="greeting">
         너는 왜 hello, {this.props.name}! <br />
